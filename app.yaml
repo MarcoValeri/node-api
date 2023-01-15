@@ -1,1 +1,6 @@
 runtime: nodejs16
+
+env_variables:
+  # Server set up
+  SERVER_PORT: 8000
+  GMAIL_PASS: 'wjabtpkaeqcvgcvg'
