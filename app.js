@@ -19,10 +19,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // Routes
-const homeRoutes = require('./routes/homeRoutes');
 const portfolioRoutes = require('./routes/portfolioRoutes');
 
-app.use(homeRoutes);
 app.use(portfolioRoutes);
 
-app.listen(process.env.SERVER_PORT);
+const PORT = process.env.PORT || process.env.SERVER_PORT;
+
+app.listen(PORT);
